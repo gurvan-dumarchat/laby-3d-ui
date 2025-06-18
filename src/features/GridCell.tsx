@@ -29,7 +29,10 @@ const GridCell = ({ x, y }: GridCellProps) => {
     if (option === null && visible) {
       return 'bg-blue-500';
     }
-    return 'bg-slate-500';
+    if (option !== null && visible) {
+      return 'bg-amber-500';
+    }
+    return 'bg-slate-200';
   }, [option, visible]);
 
   return <div className={`w-3 h-3 rounded-sm ${cellColor}`} onClick={addCell}></div>;

@@ -1,16 +1,17 @@
 'use client';
 
 import { useGrid } from '@/stores/gridData';
+import GridOptionSelect from './GridOptionSelect';
 
-const GridOptionSelector = () => {
+const GridOptionSection = () => {
   const gridStore = useGrid();
   console.log(gridStore.data);
 
   return (
     <div>
-      <p>Option sélectionnée actuellement : {gridStore.option ?? 'Aucune'}</p>
+      <GridOptionSelect />
     </div>
   );
 };
 
-export default GridOptionSelector;
+export default GridOptionSection;

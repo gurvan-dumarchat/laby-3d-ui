@@ -10,7 +10,7 @@ interface GridStore {
   data: CellData[];
   addCell: (c: CellData) => void;
   option: string | null;
-  setOption: (o: string) => void;
+  setOption: (o: string | null) => void;
 }
 
 export const useGrid = create<GridStore>((set) => ({
