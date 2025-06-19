@@ -26,6 +26,9 @@ const GridCell = ({ x, y }: GridCellProps) => {
     if (option === 'S' && visible) {
       return 'bg-red-500';
     }
+    if (option === 'M' && visible) {
+      return 'bg-cyan-500';
+    }
     if (option === null && visible) {
       return 'bg-blue-500';
     }

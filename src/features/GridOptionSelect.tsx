@@ -40,6 +40,7 @@ const GridOptionSelect = () => {
           {!exitExists && <SelectItem value="S">Sortie</SelectItem>}
           <SelectItem value="EM">Escalier Montant</SelectItem>
           <SelectItem value="ED">Escalier Descendant</SelectItem>
+          <SelectItem value="M">Monstre</SelectItem>
         </SelectContent>
       </Select>
     </div>
